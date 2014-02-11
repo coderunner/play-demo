@@ -1,0 +1,11 @@
+@(users: Iterable[UserStore.User])
+
+@main("Index of Users") {
+
+<ul>
+    @for(u <- users) {
+    <li>@u.name : @u.age</li>
+    }
+</ul>
+
+}
